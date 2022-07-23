@@ -1,0 +1,44 @@
+.html5{
+    color: rgb(197, 66, 18);
+}
+.css3{
+    color: rgb(43, 113, 210);
+}
+.js{
+    color: yellow;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+p{
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    margin: 10px;
+}
+h1{
+    font-family: 'GmarketSansMedium';
+    font-size: 30px;
+    margin: 10px;
+}
+.container{
+    display: flex;
+}
+.item{
+    width: 25%;
+    text-align: center;
+}
+.bd{
+    border: 1px solid rgb(170, 170, 170);
+}
+.click{
+    color: #000;
+}
+a{
+    text-decoration: none;
+}
+.click:hover{
+    color: #fff;
+}
