@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .ff{
+            text-decoration: none;
+            margin-left: 28px;
+            color: #000;
+        }
+    </style>
 </head>
 <body>
     <h1>북마크 리스트</h1>
     <ul>
-        {{ bookmark_list }}
+        <!-- {{ bookmark_list }} -->
         {% for i in bookmark_list %}
             <li><a href="{{ i.id }}">{{ i.title }}</a></li>
         {% endfor %}
     </ul>
+    <a class="ff" href="">만들기</a>
 </body>
 </html>
