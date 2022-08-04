@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .ff{
+            text-decoration: none;
+            margin-left: 28px;
+            color: #000;
+        }   
+    </style>
 </head>
 <body>
     <h1>{{ bookmark.title }}</h1>
@@ -13,5 +20,7 @@
         <li>메모 : {{ bookmark.memo }}</li>
         <li><a href="http://localhost:8000/bookmark/">home</a></li>
     </ul>
+    <a  class="ff" href="/bookmark/update/{{ bookmark.id }}/">수정하기</a>
+    <a  class="ff" href="/bookmark/delete/{{ bookmark.id }}/">삭제하기</a>
 </body>
 </html>

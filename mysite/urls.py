@@ -21,7 +21,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
     path('bookmark/', views.bookmark_list),
-    path('bookmark/<int:pk>/',views.bookmark_detail)
+    path('bookmark/<int:pk>/',views.bookmark_detail),
+    path('bookmark/create/',views.bookmark_create),
+    path('bookmark/update/<int:pk>/',views.bookmark_update),
+    path('bookmark/delete/<int:pk>/', views.bookmark_delete)
 ]
 
 # ~~/bookmark/
