@@ -18,9 +18,12 @@
     <ul>
         <li>URL : <a href="{{ bookmark.url }}" target="_blank">{{ bookmark.url }}</a></li>
         <li>메모 : {{ bookmark.memo }}</li>
-        <li><a href="http://localhost:8000/bookmark/">home</a></li>
+        <li><a href="{% url 'bookmarks:list' %}">home</a></li>
     </ul>
     <a  class="ff" href="/bookmark/update/{{ bookmark.id }}/">수정하기</a>
+    <a  class="ff" href="{% url 'bookmarks:update' bookmark.id %}">수정이</a>
+
     <a  class="ff" href="/bookmark/delete/{{ bookmark.id }}/">삭제하기</a>
+    <a  class="ff" href="{% url 'bookmarks:delete' bookmark.id %}">삭제하기2</a>
 </body>
 </html>

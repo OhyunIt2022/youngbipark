@@ -17,10 +17,17 @@
     <h1>북마크 리스트</h1>
     <ul>
         <!-- {{ bookmark_list }} -->
+        {% if bookmark_list %}
         {% for i in bookmark_list %}
-            <li><a href="{{ i.id }}">{{ i.title }}</a></li>
+            <li><a href="{% url 'bookmarks:detail' i.id %}">{{ i.title }}</a></li>
         {% endfor %}
+        {% else %}
+        <p>북마크 no!!no!!</p>
+        {% endif %}
     </ul>
-    <a class="ff" href="">만들기</a>
+    <a class="ff" href="{% url 'bookmarks:cr' %}">만들기</a>
 </body>
 </html>
+
+
+
